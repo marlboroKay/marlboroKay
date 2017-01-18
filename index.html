@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="utf-8">
+    <title>行走的程序猿</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <link rel="shortcut icon" href="img/logo1.ico" type="image/x-icon">
+	<link rel="icon" href="img/logo1.ico" type="image/x-icon">
+   	
+   	<link rel="stylesheet" href="css/normalize.css">
+   	<link rel="stylesheet" href="css/bootstrap.min.css">
+   	<link rel="stylesheet" href="css/main.css">
+   	<link rel="stylesheet" href="css/content3.css" id="cssfile">
+
+    <style>
+
+	</style>
+</head>
+<body>
+	<!--[if lte IE 7]>
+	    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+	<![endif]-->
+
+	<div class = "main-wrapper">
+	<header>
+		<!--页头开始-->
+		<!-- 屏幕分辨率大于768px -->
+		<nav>
+			<div class="nav-wrap" >
+				<div class = "logo">
+					<!-- <div class = "set_btn">
+						<img src="img/userPhotoSmall.jpg" alt="smallUserPhoto" width="40px" height="40px">
+					</div> -->
+					<a href="#" ><img src="img/logo.png" alt="logo'" width="180" class="author-logo"></a>
+				</div>
+				<ul class="navbar-collapse">
+					<li><a href="#" data-toggle="dropdown">简介</a></li>
+					<li><a href="#" data-toggle="dropdown">履历</a></li>
+					<li><a href="#" data-toggle="dropdown">文章&社区</a></li> 
+					<li><a id="slider_traget" href="#" data-toggle="dropdown">小游戏</a></li>
+				</ul>
+			</div>
+			<!-- 屏幕分辨率小于768px -->
+			<div class="navbar-small">
+				<a href="#" ><img src="img/logo5.png" alt="logo'" width="180" class="author-logo"></a>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				
+			</div>
+		</nav>
+		<div id = "banner">
+			<!-- 下雪特效 -->
+			<canvas id='canv' class="cavans-show"></canvas>
+			<div class = "inner">
+				<div class="line-top"></div>
+				<h1 id="oName">行走的程序猿</h1>
+				<div class="line-bottom-replace"></div>
+				<div class="line-bottom"></div>
+				<p class = "sub-heading">若不撇开终是苦</p>
+				<p class = "sub-heading">各自捺住即成名</p>
+				<p class = "sub-heading sub-line-end"><em>撇捺人生</em></p>
+				<button id = "main-btn"><span>更多</span><span class="glyphicon glyphicon-cloud-download icon-top"></span></button>
+
+			</div>
+		</div>
+	</header><!--页头结束-->
+	<div class = "content"><!--内容开始-->
+		<section class = "author-section">
+			<section class="style-switch">
+			<div id="inset">
+				<a class="orange" href="#" id="content3"></a>
+				<a class="green" href="#" id="content2"></a>
+				<a class="red" href="#" id="content1"></a>
+			</div>
+		</section>
+			<div class = "wrapper">
+				<div class="author-left">
+					
+						<figure id="img">
+						<img src="img/self.png" alt="">
+						<hgroup>
+							<h1>Liang Cui</h1>
+							<h2>Web前端工程师</h2>
+							<h3>中国·深圳·龙岗</h3>
+						</hgroup>
+					</figure>
+					<ul class = "container">
+						<li>
+							<div class = "link">
+								<span class="glyphicon glyphicon-user icon-right"></span>个人简介
+							</div>
+						</li>
+						<li>
+							<div class = "link">
+								<span class="glyphicon glyphicon-book icon-right"></span>工作履历
+							</div>
+						</li>
+						<li>
+							<div class = "link">
+								<span class="glyphicon glyphicon-th-list icon-right"></span>文章&社区
+							</div>
+						</li>
+						<li>
+							<div class = "link">
+								<span class="glyphicon glyphicon-th-large icon-right"></span>作品展示
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="author-right">
+					<div class="code">
+						<span class="glyphicon glyphicon-qrcode icon-edg"></span>
+					</div>
+					<div class = "list-contain">
+						<div class="person list">
+							<h1>个人简介</h1>
+							<p><em>熟悉W3C标准，对表现与数据分离、Web语义化等有深刻理解。深入理解JavaScript面向对象原理、熟悉MVC的设计模式。理解AJAX运作机制，熟练掌握JQuery等主流JS框架。 能够熟练应用HTML/CSS/JavaScript技术，开发符合W3C标准的网站前端页面。
+							</em>
+							</p>
+							<ul class="info">
+								<li>
+									<i class="glyphicon glyphicon-user icon-right"></i>
+									<label>姓名</label>
+									<span>Liang Cui</span>
+								</li>
+								<li>
+									<i class="glyphicon glyphicon-calendar icon-right"></i>
+									<label>出生日期</label>
+									<span>1990年3月</span>
+								</li>
+								<li>
+									<i class="glyphicon glyphicon-education icon-right"></i>
+									<label>学历</label>
+									<span>本科</span>
+								</li>
+								<li>
+									<i class="glyphicon glyphicon-phone icon-right"></i>
+									<label>联系电话</label>
+									<span>18926560772</span>
+								</li>
+								<li>
+									<i class="glyphicon glyphicon-envelope icon-right"></i>
+									<label>邮箱</label>
+									<span>18926560772@163.com</span>
+								</li>
+								<li>
+									<i class="glyphicon glyphicon-home icon-right"></i>
+									<label>个人主页</label>
+									<span><a href="https://github.com/marlboroKay">github.com/marlboroKay</a></span>
+								</li>
+								<li>
+									<i class="glyphicon glyphicon-fire icon-right"></i>
+									<label>博客地址</label>
+									<span><a href="http://www.imooc.com/article/9307">www.imooc.com/marlboroKay</a></span>
+								</li>
+								<li>
+									<i class="glyphicon glyphicon-wrench icon-right"></i>
+									<label>工作年限</label>
+									<span>3年+</span>
+								</li>
+							</ul>
+							<div class="ad">
+								<ul class="slider">
+									<li><img src="img/ad1.png" alt=""></li>
+									<li><img src="img/ad2.png" alt=""></li>
+									<li><img src="img/ad3.png" alt=""></li>
+								</ul>
+							</div>
+						</div>
+						<div class="experience list">
+							<h1>工作履历</h1>
+							<div class="job-wrap">
+								<div class="job-experience">
+									<div class="exp-liian">
+                                        <em>
+                                        	<span class="glyphicon glyphicon-map-marker"></span>
+                                        	利联电子有限公司
+                                        </em>
+                                        <label>
+                                        	<span class="glyphicon glyphicon-calendar"></span>
+                                        	2014.03-至今
+                                        </label>
+                                    </div>
+                                    <div class="exp-lilian-con">            
+                                        <p>工作地点:深圳</p>
+                                        <p>工作职责:</p>
+                                        <ul>
+                                            <li>1.研发云消费机管理系统(前后端)</li>
+                                            <li>（2）负责研发需求的调研与收集</li>
+                                            <li>（3）负责公司与的OEM合作与独立开发研发任务的研讨</li>
+                                            <li>（4）负责公司开发过程监控与跟踪（硬件与软件）</li>
+                                            <li>（5）负责公司各部门各人员的开发协调</li>
+                                            <li>（6）负责对项目组成员及其它部门相关人员进行产品功能培训</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="exp-jingdian">
+                                    	 <em>
+                                        	<span class="glyphicon glyphicon-map-marker"></span>
+                                        	径点科技有限公司
+                                        </em>
+                                        <label>
+                                        	<span class="glyphicon glyphicon-calendar"></span>
+                                        	2013.10-2015.01
+                                        </label>
+                                    </div>
+                                    <div class="exp-jingdian-con">            
+                                        <p>工作地点:长春</p>
+                                        <p>工作职责:</p>
+                                        <ul>
+                                            <li>1.研发云消费机管理系统(前后端)</li>
+                                            <li>（2）负责研发需求的调研与收集</li>
+                                            <li>（3）负责公司与的OEM合作与独立开发研发任务的研讨</li>
+                                            <li>（4）负责公司开发过程监控与跟踪（硬件与软件）</li>
+                                            <li>（5）负责公司各部门各人员的开发协调</li>
+                                            <li>（6）负责对项目组成员及其它部门相关人员进行产品功能培训</li>
+                                        </ul>
+                                    </div>
+								</div>
+							<hr>
+								<div class="skill">
+									<h2>前端语言</h2>
+									<div class="html">
+                                        <label>Html</label>
+                                        <i>95%</i>
+                                    </div>
+                                    <div class="css">
+                                        <label>Css</label>
+                                        <i>90%</i>
+                                    </div>
+                                    <div class="js">
+                                        <label>Javascript</label>
+                                        <i>90%</i>
+                                    </div>
+                                    <h2>前端框架</h2>
+									<div class="jquery">
+                                        <label>JQuery</label>
+                                        <i>80%</i>
+                                    </div>
+                                     <div class="boot">
+                                        <label>Bootstrap</label>
+                                        <i>70%</i>
+                                    </div>
+                                    <div class="node">
+                                        <label>Node.js</label>
+                                        <i>30%</i>
+                                    </div>
+                                    <div class="vue">
+                                        <label>Vue.js</label>
+                                        <i>30%</i>
+                                    </div>
+                                    <h2>服务器</h2>
+									<div class="asp">
+                                        <label>ASP</label>
+                                        <i>95%</i>
+                                    </div>
+                                    <div class="php">
+                                        <label>PHP</label>
+                                        <i>50%</i>
+                                    </div>
+                                    <div class="sql">
+                                        <label>SQL</label>
+                                        <i>60%</i>
+                                    </div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="file list">
+							<h1>文章&社区</h1>
+							<p><em>记录生活的点滴,一步一步成长.
+							</em>
+							</p>
+							<ul class="info">
+								<li>
+									<i class="glyphicon glyphicon-pencil icon-right"></i>
+									<label><a href="http://www.imooc.com/article/9307">微信公众号接口开发心得</a></label>
+								</li>
+								<li>
+									<i class="glyphicon glyphicon-pencil icon-right"></i>
+									<label><a href="http://www.imooc.com/article/10855">鼠标拖拽效果在IE8下兼容</a></label>
+								</li>
+								<li>
+									<i class="glyphicon glyphicon-pencil icon-right"></i>
+									<label><a href="http://www.imooc.com/article/11747">用apicloud创建webapp</a></label>
+								</li>
+								<li>
+									<i class="glyphicon glyphicon-pencil icon-right"></i>
+									<label><a href="http://www.imooc.com/article/11867">Asp + Ajax 异步处理数据</a></label>
+								</li>
+								<li>
+									<i class="glyphicon glyphicon-pencil icon-right"></i>
+									<label><a href="http://www.imooc.com/article/12429">Html+Css+ASP 实现日历功能</a></label>
+								</li>
+								<li>
+									<i class="glyphicon glyphicon-pencil icon-right"></i>
+									<label><a href="http://www.imooc.com/article/12536">PHP--实现日历查看功能 </a></label>
+								</li>
+								<li>
+									<i class="glyphicon glyphicon-pencil icon-right"></i>
+									<label><a href="http://www.imooc.com/article/12511">PHP连接SQL server相关配置及说明</a></label>
+								</li>
+								<li>
+									<i class="glyphicon glyphicon-pencil icon-right"></i>
+									<label><a href="http://www.imooc.com/article/13690">web组件之下拉菜单（CSS3手风琴效果）</a></label>
+								</li>
+								<li>
+									<i class="glyphicon glyphicon-pencil icon-right"></i>
+									<label><a href="http://www.imooc.com/article/14214">wordpress导入主题---《Bootstrap实战》</a></label>
+								</li>
+								<li>
+									<i class="glyphicon glyphicon-pencil icon-right"></i>
+									<label><a href="http://www.imooc.com/article/14888">垂直滚动+相对定位</a></label>
+								</li>
+							</ul>
+						</div>
+						<div class="product list">
+							<h1>作品展示</h1>
+							<div class="product-show">
+								<div class="pro-left">
+									<div class="pro-img">
+										<a href="http://www.yunxfj.com">
+											<img src="img/lilian.png" alt="">
+										<div class="pro-des">
+											<p><a href="http://www.yunxfj.com" style="color:#000;">云消费管理系统</a></p>
+											<p><a href="http://www.yunxfj.com" style="color:#93999f;">用户名&密码:888888</a></p>
+										</div>
+										</a>
+										
+									</div>
+								</div>
+								<div class="pro-right">
+									<div class="pro-img">
+										<a href="http://www.yunxfj.com">
+											<img src="img/dog.png" alt="">
+										<div class="pro-des">
+											<p><a href="http://www.yunxfj.com" style="color:#000;">Duang,dog dog 几点了</a></p>
+											<p><a href="http://www.yunxfj.com" style="color:#93999f;">汪汪汪，你猜!</a></p>
+										</div>
+										</a>
+										
+									</div>
+								</div>
+							</div>
+							<div class="product-show">
+								<div class="pro-left">
+									<div class="pro-img">
+										<a href="http://www.yunxfj.com">
+											<img src="img/transform.png" alt="">
+										<div class="pro-des">
+											<p><a href="http://www.yunxfj.com" style="color:#000;">五子棋人机大战</a></p>
+											<p><a href="http://www.yunxfj.com" style="color:#93999f;">等你来战!</a></p>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="pro-right">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+	</div><!--内容结束-->
+	<footer><!--页脚开始-->
+		<ul class = "share-group">
+			<li class="fb"><a href="#"><div>&nbsp;</div></a></li>
+			<li class="tw"><a href="#"><div>&nbsp;</div></a></li>
+		   	<li class="li"><a href="#"><div>&nbsp;</div></a></li>
+			<li class="vm"><a href="#"><div>&nbsp;</div></a></li>
+		</ul>
+		<div class = "copy">
+			&copy MarlboroKay's
+		</div>
+	</footer><!--页脚结束-->
+	</div>
+	<div class = "mask"></div>
+	<div class = "menu">
+		<ul>
+			<li><a href = "#">item1</a></li>
+			<li><a href = "#">item2</a></li>
+			<li><a href = "#">item3</a></li>
+			<li><a href = "#">item4</a></li>
+		</ul>
+	</div>
+	<button class = "back-to-top"></button>
+</body>
+
+<script type = "text/javascript" src = "js/jquery-1.9.1.js"></script>
+<script type="text/javascript"src="js/jquery.cookie.js" ></script>
+<script type = "text/javascript" src = "js/main.js"></script>
+<script type = "text/javascript" src = "js/snow.js"></script>
+</html>
